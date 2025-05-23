@@ -1,71 +1,187 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UMKM Anda</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>CNMart - Natural Beauty</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
   <!-- Header -->
-  <header class="header">
-    <div class="logo">
-      <div class="logo-circle"></div>
-      <h1>UMKM Anda</h1>
-    </div>
-    <nav class="nav">
-      <div class="dropdown">
-        <button onclick="toggleDropdown('productDropdown')">Product ▼</button>
-        <div id="productDropdown" class="dropdown-content">
-          <a href="#">Produk 1</a>
-          <a href="#">Produk 2</a>
-          <a href="#">Produk 3</a>
-        </div>
-      </div>
-      <a href="#story">Story</a>
-      <a href="#team">Team</a>
-      <div class="dropdown">
-        <button onclick="toggleDropdown('supportDropdown')">Support ▼</button>
-        <div id="supportDropdown" class="dropdown-content">
-          <a href="#">Bantuan</a>
-          <a href="#">FAQ</a>
-          <a href="#">Kontak</a>
-        </div>
+  <header>
+    <nav>
+      <div class="logo">CNMart</div>
+      <ul class="nav-menu">
+        <li class="dropdown">
+          <a href="#">Product</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Story</a></li>
+        <li class="dropdown">
+          <a href="#">Support</a>
+          <ul class="dropdown-menu">
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="shop-button">
+        <a href="#">Shop</a>
       </div>
     </nav>
-    <button class="shop-button">Shop</button>
   </header>
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
-      <h2><span class="highlight">Solusi</span> Digital <br> Untuk <span class="highlight">UMKM</span> Anda</h2>
-      <p>Tingkatkan penjualan dan jangkauan bisnis Anda dengan platform digital terpercaya.</p>
-      <a href="#manfaat" class="cta-button">Jelajahi Manfaat</a>
+      <h1>
+        Lorem ipsum<br>
+        dolor sit amet,<br>
+        consectetur<br>
+        adipiscing elit
+      </h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      <a href="#" class="btn">Explore Benefits</a>
     </div>
-    <div class="hero-cards">
-      <div class="card card1"></div>
-      <div class="card card2"></div>
-      <div class="card card3"></div>
+    <div class="hero-images">
+      <div class="card card-1"></div>
+      <div class="card card-2"></div>
+      <div class="card card-3"></div>
     </div>
   </section>
 
-  <script>
-    function toggleDropdown(id) {
-      document.getElementById(id).classList.toggle("show");
-    }
+  <!-- Natural Beauty Section -->
+  <section>
+    <h1>Discover the essence of natural beauty</h1>
+    <p>
+      Explore our range of premium, natural beauty products designed to enhance your skin's natural glow
+      with elegance and simplicity.
+    </p>
+    <div class="product-grid">
+      <div class="product-item">anuan</div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+      <div class="product-item"></div>
+    </div>
+  </section>
 
-    window.onclick = function(event) {
-      if (!event.target.matches('button')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>What our clients say</h2>
+    <p>Discover how our natural beauty products have transformed the skincare routines of our valued customers.</p>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        <img src="taylor.jpg" alt="Taylor Smith">
+        <h3>Taylor Smith</h3>
+        <p>The natural ingredients have made a noticeable difference in my skin's texture and appearance. Highly recommend!</p>
+      </div>
+      <div class="testimonial">
+        <img src="jordan.jpg" alt="Jordan Lee">
+        <h3>Jordan Lee</h3>
+        <p>I've never felt more confident in my skin. The products are gentle yet effective, perfect for daily use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-grid">
+      <div>
+        <h3>What makes our products natural?</h3>
+        <p>Our products are crafted with 100% organic ingredients, ensuring no harmful chemicals are used.</p>
+      </div>
+      <div>
+        <h3>Are there any side effects?</h3>
+        <p>Our formulations are designed to be gentle and safe for all skin types, minimizing any risk of side effects.</p>
+      </div>
+      <div>
+        <h3>How do I use the products?</h3>
+        <p>Apply a small amount to clean skin, gently massaging until fully absorbed. Use daily for best results.</p>
+      </div>
+      <div>
+        <h3>What is the return policy?</h3>
+        <p>We offer a 30-day satisfaction guarantee. If you're not happy, return the product for a full refund.</p>
+      </div>
+      <div>
+        <h3>How can I contact support?</h3>
+        <p>Reach out to our support team via email or phone for any assistance you need.</p>
+      </div>
+      <div>
+        <h3>Where are the products made?</h3>
+        <p>All our products are proudly made in eco-friendly facilities, ensuring quality and sustainability.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team">
+    <div class="team-grid">
+      <div class="team-member">
+        <img src="taylor.jpg" alt="Taylor Smith">
+        <h4>Taylor Smith</h4>
+        <p>Product Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="jordan.jpg" alt="Jordan Lee">
+        <h4>Jordan Lee</h4>
+        <p>Marketing Director</p>
+      </div>
+      <div class="team-member">
+        <img src="alex.jpg" alt="Alex Kim">
+        <h4>Alex Kim</h4>
+        <p>Lead Designer</p>
+      </div>
+      <div class="team-member">
+        <img src="morgan.jpg" alt="Morgan Brown">
+        <h4>Morgan Brown</h4>
+        <p>Sales Executive</p>
+      </div>
+      <div class="team-member">
+        <img src="casey.jpg" alt="Casey Davis">
+        <h4>Casey Davis</h4>
+        <p>Operations Manager</p>
+      </div>
+      <div class="team-member">
+        <img src="riley.jpg" alt="Riley Taylor">
+        <h4>Riley Taylor</h4>
+        <p>HR Specialist</p>
+      </div>
+      <div class="team-member">
+        <img src="jamie.jpg" alt="Jamie Morgan">
+        <h4>Jamie Morgan</h4>
+        <p>Finance Analyst</p>
+      </div>
+      <div class="team-member">
+        <img src="avery.jpg" alt="Avery Jordan">
+        <h4>Avery Jordan</h4>
+        <p>IT Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="logo">CNMART</div>
+    <nav>
+      <a href="#">Products</a>
+      <a href="#">Story</a>
+      <a href="#">Manufacturing</a>
+      <a href="#">Packaging</a>
+      <a href="#">Team</a>
+      <a href="#">Contact</a>
+    </nav>
+    <p>All rights reserved © 2025 CNMart</p>
+  </footer>
+
 </body>
 </html>
