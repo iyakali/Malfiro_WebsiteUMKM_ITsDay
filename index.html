@@ -2,177 +2,216 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>CNMart - Natural Beauty</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>CNMart</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Header -->
-  <header>
-    <nav>
-      <div class="logo">CNMart</div>
-      <ul class="nav-menu">
-        <li class="dropdown">
-          <a href="#">Product</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">All Products</a></li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="#">Best Sellers</a></li>
-          </ul>
-        </li>
+<header class="show-navbar">
+  <nav>
+    <div class="logo">
+      <a href="#"><img src="assets/logo.png" alt="CNMart Logo" class="logo-img" /></a>
+    </div>
+
+    <button class="hamburger" id="hamburger-btn" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-menu" id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="#">Product</a></li>
         <li><a href="#">Story</a></li>
+        <li><a href="#">Team</a></li>
         <li class="dropdown">
-          <a href="#">Support</a>
+          <a href="#">Support▾</a>
           <ul class="dropdown-menu">
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </li>
       </ul>
-      <div class="shop-button">
-        <a href="#">Shop</a>
+
+      <div class="nav-right">
+        <div class="shop-button">
+          <a href="#">Shop</a>
+        </div>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
+
 
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-text">
       <h1>
-        Lorem ipsum<br>
-        dolor sit amet,<br>
-        consectetur<br>
-        adipiscing elit
+        Citra Negara Mini Market
       </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-      <a href="#" class="btn">Explore Benefits</a>
+      <p>SMK Citra Negara menghadirkan CN Mart, mini market praktis di dalam sekolah yang menyediakan berbagai kebutuhan siswa — dari camilan favorit hingga minuman segar.</p>
+      <div class="btn">
+      <a href="#">Explore Benefits</a>
+      </div>
     </div>
-    <div class="hero-images">
-      <div class="card card-1"></div>
-      <div class="card card-2"></div>
-      <div class="card card-3"></div>
-    </div>
+
+        <div class="box">
+          <div class="card-background"><img src="assets/matcha.png "></div>
+          </div>
+
   </section>
 
   <!-- Natural Beauty Section -->
-  <section>
-    <h1>Discover the essence of natural beauty</h1>
+  <section class="sec2">
+    <h1>Paling Laris di CN Mart!</h1>
     <p>
-      Explore our range of premium, natural beauty products designed to enhance your skin's natural glow
-      with elegance and simplicity.
+      Ini dia produk-produk yang paling banyak dibeli oleh siswa! Temukan produk yang kamu butuhkan, kapan saja di sekolah!
     </p>
-    <div class="product-grid">
-      <div class="product-item">anuan</div>
-      <div class="product-item"></div>
-      <div class="product-item"></div>
-      <div class="product-item"></div>
-      <div class="product-item"></div>
-      <div class="product-item"></div>
-      <div class="product-item"></div>
-      <div class="product-item"></div>
+<div class="card-container">
+  <div class="cards">
+    <img src="assets/popmie.jpg" alt="Pop Mie">
+  </div>
+  <div class="cards">
+    <img src="assets/chitato.jpg" alt="Chitato">
+  </div>
+  <div class="cards">
+    <img src="assets/taro.jpg" alt="Taro">
+  </div>
+  <div class="cards">
+    <img src="assets/nabati.jpg" alt="Nabati">
+  </div>
+  <div class="cards">
+    <img src="assets/bengbeng.jpg" alt="Beng Beng">
+  </div>
+  <div class="cards">
+    <img src="assets/nextar.jpg" alt="Nextar">
+  </div>
+  <div class="cards">
+    <img src="assets/le-mineral.jpg" alt="Le Mineral">
+  </div>
+  <div class="cards">
+    <img src="assets/teh-pucuk.jpg" alt="Teh Pucuk">
+  </div>
+</div>
+  </section>
+
+  <section class="sec3">
+    <div class="card-containers">
+    <div class="cardsss">
+      <h3>Snacks</h3>
     </div>
+    <div class="cardsss">
+      <h3>Minuman</h3>
+    </div>
+    <div class="cardsss">
+      <h3>ATK</h3>
+    </div>
+    <div class="cardsss">
+      <h3>Makanan</h3>
+    </div>
+  </div>
+
+  <div class="cardss-container">
+    <div class="cardss">
+      <img src="assets/cnmart.jpg" alt="">
+    </div>
+    <div class="cardss-content">
+    <h2>Temukan Kenyamanan Belanja di Sekolah</h2>
+    <a href="#">Explore Benefit</a>
+    </div>
+  </div>
+
+
   </section>
 
   <!-- Testimonials -->
-  <section id="testimonials">
-    <h2>What our clients say</h2>
-    <p>Discover how our natural beauty products have transformed the skincare routines of our valued customers.</p>
-    <div class="testimonial-list">
-      <div class="testimonial">
-        <img src="taylor.jpg" alt="Taylor Smith">
-        <h3>Taylor Smith</h3>
-        <p>The natural ingredients have made a noticeable difference in my skin's texture and appearance. Highly recommend!</p>
-      </div>
-      <div class="testimonial">
-        <img src="jordan.jpg" alt="Jordan Lee">
-        <h3>Jordan Lee</h3>
-        <p>I've never felt more confident in my skin. The products are gentle yet effective, perfect for daily use.</p>
-      </div>
+<section class="content-3">
+        <div class="box-3">
+            <h3>Review</h3>
+            <div class="container-2">
+                <div class="card-2">
+                    <!-- <img src="https://via.placeholder.com/300x200" alt="Gambar 1"> -->
+                     <img src="assets/star.png" alt="">
+                     <p>"Asli, CN Mart ngebantu banget pas lagi laper tapi jam istirahat mepet. Tinggal beli, langsung makan!"
+<p>
+                    <span>CN Mart Review</span>
+               </div>
+                <div class="card-2">
+                    <!-- <img src="https://via.placeholder.com/300x200" alt="Gambar 2"> -->
+                    <img src="assets/star.png" alt="">
+                    <p>"Nggak perlu jauh-jauh ke luar sekolah. Tinggal ke CN Mart, semua ada. Praktis banget!"
+<p>
+                    <span>CN Mart Review</span>
+                </div>
+                <div class="card-2">
+                    <!-- <img src="https://via.placeholder.com/300x200" alt="Gambar 3"> -->
+                    <img src="assets/star.png" alt="">
+                    <p>"Kadang cuma pengen jajan doang biar mood balik lagi. Untung ada CN Mart!"
+<p>
+                    <span>CN Mart Review</span>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+
+    </section>
 
   <!-- FAQ -->
   <section id="faq">
     <h2>Frequently Asked Questions</h2>
+    <span>Jawaban dari pertanyaan yang sering ditanyakan seputar CN Mart.</span>
     <div class="faq-grid">
-      <div>
-        <h3>What makes our products natural?</h3>
-        <p>Our products are crafted with 100% organic ingredients, ensuring no harmful chemicals are used.</p>
+      <div class="card-faq">
+        <h3>CN Mart itu toko apa sih?</h3>
+        <p>CN Mart adalah minimarket di lingkungan sekolah yang menyediakan berbagai kebutuhan siswa seperti makanan ringan, minuman, dan alat tulis.</p>
       </div>
-      <div>
-        <h3>Are there any side effects?</h3>
-        <p>Our formulations are designed to be gentle and safe for all skin types, minimizing any risk of side effects.</p>
+      <div class="card-faq">
+        <h3>CN Mart buka dari jam berapa sampai jam berapa?</h3>
+        <p>CN Mart biasanya buka dari pukul 07.00 pagi sampai 15.00 sore di hari sekolah (Senin–Jumat). Jam operasional bisa berubah saat ada kegiatan khusus.</p>
       </div>
-      <div>
-        <h3>How do I use the products?</h3>
-        <p>Apply a small amount to clean skin, gently massaging until fully absorbed. Use daily for best results.</p>
+      <div class="card-faq">
+        <h3>Boleh nggak belanja pas jam pelajaran?</h3>
+        <p>Tidak boleh. CN Mart hanya melayani pembelian saat jam istirahat atau setelah jam pelajaran selesai, demi menjaga ketertiban kelas.</p>
       </div>
-      <div>
-        <h3>What is the return policy?</h3>
-        <p>We offer a 30-day satisfaction guarantee. If you're not happy, return the product for a full refund.</p>
+      <div class="card-faq">
+        <h3>Barang yang saya mau habis, bisa minta restok?</h3>
+        <p>Tentu! Kamu bisa lapor ke petugas CN Mart, nanti akan dicatat dan diusahakan untuk restok secepatnya.</p>
       </div>
-      <div>
-        <h3>How can I contact support?</h3>
-        <p>Reach out to our support team via email or phone for any assistance you need.</p>
+      <div class="card-faq">
+        <h3>Kalau beli tapi barangnya rusak/gagal produk, bisa ditukar?</h3>
+        <p>Bisa, selama kamu lapor maksimal 1x24 jam dan menunjukkan bukti pembelian.</p>
       </div>
-      <div>
-        <h3>Where are the products made?</h3>
-        <p>All our products are proudly made in eco-friendly facilities, ensuring quality and sustainability.</p>
+      <div class="card-faq">
+        <h3>Pembayarannya bisa via apa aja?</h3>
+        <p>Untuk saat ini Pembayarannya bisa melalui cash / e-wallet ya!</p>
       </div>
     </div>
   </section>
 
-  <!-- Team Section -->
-  <section id="team">
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="taylor.jpg" alt="Taylor Smith">
-        <h4>Taylor Smith</h4>
-        <p>Product Manager</p>
+  <!-- payment section -->
+<section class="sec4">
+ <div class="klien">
+        <h3>Klien kami</h3>
+        <span>Kami telah di percaya beberapa perusahaan terbaik</span>
+
+    <div class="wrapper">
+        <div class="itemLeft item1"><img src="assets/dana.png" alt=""></div>
+        <div class="itemLeft item2"><img src="assets/gojek.png" alt=""></div>
+        <div class="itemLeft item3"><img src="assets/gopay.png" alt=""></div>
+
       </div>
-      <div class="team-member">
-        <img src="jordan.jpg" alt="Jordan Lee">
-        <h4>Jordan Lee</h4>
-        <p>Marketing Director</p>
+      <div class="wrapper">
+        <div class="itemRight item1"><img src="assets/shopepay.png" alt=""></div>
+        <div class="itemRight item2"><img src="assets/ovo.png" alt=""></div>
       </div>
-      <div class="team-member">
-        <img src="alex.jpg" alt="Alex Kim">
-        <h4>Alex Kim</h4>
-        <p>Lead Designer</p>
-      </div>
-      <div class="team-member">
-        <img src="morgan.jpg" alt="Morgan Brown">
-        <h4>Morgan Brown</h4>
-        <p>Sales Executive</p>
-      </div>
-      <div class="team-member">
-        <img src="casey.jpg" alt="Casey Davis">
-        <h4>Casey Davis</h4>
-        <p>Operations Manager</p>
-      </div>
-      <div class="team-member">
-        <img src="riley.jpg" alt="Riley Taylor">
-        <h4>Riley Taylor</h4>
-        <p>HR Specialist</p>
-      </div>
-      <div class="team-member">
-        <img src="jamie.jpg" alt="Jamie Morgan">
-        <h4>Jamie Morgan</h4>
-        <p>Finance Analyst</p>
-      </div>
-      <div class="team-member">
-        <img src="avery.jpg" alt="Avery Jordan">
-        <h4>Avery Jordan</h4>
-        <p>IT Support</p>
       </div>
     </div>
+
   </section>
 
   <!-- Footer -->
-  <footer>
-    <div class="logo">CNMART</div>
-    <nav>
+<footer>
+  <div class="footer-container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="logo" class="footer-logo">
+    </div>
+    <nav class="footer-nav">
       <a href="#">Products</a>
       <a href="#">Story</a>
       <a href="#">Manufacturing</a>
@@ -180,8 +219,38 @@
       <a href="#">Team</a>
       <a href="#">Contact</a>
     </nav>
-    <p>All rights reserved © 2025 CNMart</p>
-  </footer>
+    <p class="copyright">All rights reserved © 2025 CNMart</p>
+  </div>
+</footer>
+
 
 </body>
+
+<script>
+  let lastScrollY = window.scrollY;
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY) {
+      // Scroll ke bawah → sembunyikan navbar
+      header.classList.add("hide-navbar");
+      header.classList.remove("show-navbar");
+    } else {
+      // Scroll ke atas → tampilkan navbar
+      header.classList.add("show-navbar");
+      header.classList.remove("hide-navbar");
+    }
+    lastScrollY = window.scrollY;
+  });
+
+  function toggleMenu() {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("active");
+  }
+
+
+
+</script>
+
+
 </html>
